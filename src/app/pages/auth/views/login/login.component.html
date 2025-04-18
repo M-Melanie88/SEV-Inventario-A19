@@ -1,0 +1,23 @@
+<div class="contenedor">
+  <div class="login-box">
+    <h2>Iniciar Sesión</h2>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Ingresa tu correo" [(ngModel)]="email" />
+
+    <label for="password">Contraseña</label>
+    <div class="password-field">
+      <input type="password" id="password" [(ngModel)]="password"  placeholder="Ingresa tu contraseña aqui" />
+      <span class="eye-icon">👁️</span>
+    </div>
+
+    <a class="forgot-password" href="#">¿Has olvidado tu contraseña?</a>
+
+    <button class="login-button" onclick="return false;" (click)="callLogin()">Iniciar Sesión</button>
+
+  </div>
+
+  <div class="login-banner">
+    <img src="assets/img/sev.png" alt="Logo SEV" />
+  </div>
+</div>
