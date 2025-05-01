@@ -1,0 +1,36 @@
+<div class="layout-topbar">
+  <div class="layout-topbar-logo-container">
+    <button
+      class="layout-menu-button layout-topbar-action"
+      (click)="layoutService.onMenuToggle()"
+    >
+      <i class="pi pi-bars"></i>
+    </button>
+    <a class="layout-topbar-logo" routerLink="/">
+      <img class="img-dashboard" src="assets/img/sev.png" alt="Logo SEV" />
+    </a>
+  </div>
+
+  <div class="layout-topbar-actions">
+    <div class="layout-config-menu">
+      <button
+        type="button"
+        class="layout-topbar-action"
+        (click)="toggleDarkMode()"
+      >
+        <!--      <i 
+          [ngClass]="{
+            'pi ': true,
+            'pi-moon': layoutService.isDarkTheme(),
+            'pi-sun': !layoutService.isDarkTheme()
+                }"
+          ></i>-->
+      </button>
+    </div>
+
+    <button type="button" class="layout-topbar-action">
+      <i class="pi pi-user"></i>
+      <span>Profile</span>
+    </button>
+  </div>
+</div>

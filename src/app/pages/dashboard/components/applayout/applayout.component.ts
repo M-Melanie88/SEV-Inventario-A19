@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, Renderer2, ViewChild } from '@angular/core';
-import { AppTopbar } from '../../../../layout/component/app.topbar';
-import { AppSidebar } from '../../../../layout/component/app.sidebar';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter, Subscription } from 'rxjs';
 import { LayoutService } from '../../../../layout/service/layout.service';
+import { SidebarComponent } from '../../../../shared/components/sidebar/sidebar.component';
+import { TopbarComponent } from '../../../../shared/components/topbar/topbar.component';
 
 @Component({
   selector: 'app-applayout',
- imports: [CommonModule, AppTopbar, AppSidebar, RouterModule],
+ imports: [CommonModule, TopbarComponent, SidebarComponent, RouterModule],
   templateUrl: './applayout.component.html',
   styleUrl: './applayout.component.scss'
 })
@@ -17,9 +17,9 @@ export class ApplayoutComponent {
 
   menuOutsideClickListener: any;
 
-  @ViewChild(AppSidebar) appSidebar!: AppSidebar;
+  @ViewChild(SidebarComponent) sidebarComponent!: SidebarComponent;
 
-  @ViewChild(AppTopbar) appTopBar!: AppTopbar;
+  @ViewChild(TopbarComponent) topbarComponent!: TopbarComponent;
 
   constructor(
       public layoutService: LayoutService,
