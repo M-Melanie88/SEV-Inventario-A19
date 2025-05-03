@@ -3,9 +3,9 @@ import { MenuComponent } from "../menu/menu.component";
 
 @Component({
   selector: 'app-sidebar',
-  imports: [MenuComponent],
+  imports: [MenuComponent, MenuComponent],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  styleUrl: './sidebar.component.scss',
 })
 export class SidebarComponent {
   constructor(public el: ElementRef) {}

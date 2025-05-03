@@ -4,6 +4,7 @@
 @use 'primeicons/primeicons.css';
 @use './assets/demo/demo.scss';
 
+
 /* position */
 .toast-center-center {
     top: 50%;
@@ -46,7 +47,7 @@
     bottom: 12px;
     left: 12px;
   }
-  
+
   /* toast styles */
   .toast-title {
     font-weight: bold;
@@ -195,8 +196,8 @@
     }
   }
 
-  //Dashboard 
+  //Dashboard
   .img-dashboard{
     width: 200px;
-    
+
   }

@@ -7,7 +7,7 @@ import { LayoutService } from '../../../layout/service/layout.service';
 
 @Component({
   selector: 'app-topbar',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './topbar.component.html',
   styleUrl: './topbar.component.scss'
 })
