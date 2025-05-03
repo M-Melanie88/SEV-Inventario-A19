@@ -4,11 +4,33 @@
 
   <div class="layout-main-container">
     <div class="grid grid-cols-3 gap-4">
-      <!-- Cards -->
-      <app-card-button></app-card-button>
-      <app-card-button></app-card-button>
-      <app-card-button></app-card-button>
+      <!-- Card 1 -->
+      <app-card-button
+        [ruta]="'/loands'"
+        [titulo]="'Inventario'"
+        [cantidad]="87"
+        [subtitulo]="'10 actualizados'"
+        [icono]="'pi pi-database'"
+      >
+      </app-card-button>
+      <!-- Card 2 -->
+      <app-card-button
+        [ruta]="'/voucher'"
+        [titulo]="'Vouchers'"
+        [cantidad]="152"
+        [subtitulo]="'24 new'"
+        [icono]="'pi pi-shopping-cart'"
+      >
+      </app-card-button>
+      <!-- Card 3 -->
+      <app-card-button
+        [ruta]="'/reportes'"
+        [titulo]="'Reportes'"
+        [cantidad]="34"
+        [subtitulo]="'3 nuevos'"
+        [icono]="'pi pi-chart-line'"
+      >
+      </app-card-button>
     </div>
-    <!-- <router-outlet></router-outlet> -->
   </div>
 </div>

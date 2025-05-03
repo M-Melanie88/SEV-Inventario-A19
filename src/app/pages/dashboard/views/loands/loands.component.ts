@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, Renderer2, ViewChild } from '@angular/core';
+import { Component, Renderer2, ViewChild } from '@angular/core';
 import { CrudComponent } from '../../components/crud/crud.component';
 import { SidebarComponent } from '../../../../shared/components/sidebar/sidebar.component';
 import { TopbarComponent } from '../../../../shared/components/topbar/topbar.component';
@@ -7,24 +7,18 @@ import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter, Subscription } from 'rxjs';
 import { LayoutService } from '../../../../layout/service/layout.service';
 
-@Component({
-  selector: 'app-voucher',
-  imports: [
-    CrudComponent,
-    SidebarComponent,
-    TopbarComponent,
-    CommonModule,
-    RouterModule,
-  ],
-  templateUrl: './voucher.component.html',
-  styleUrl: './voucher.component.scss',
-})
-export class VoucherComponent {
-  @Output() url = new EventEmitter<string>();
 
-  enviarUrl() {
-    this.url.emit( "/vaucher");
-  }
+@Component({
+  selector: 'app-loands',
+  imports: [   CrudComponent,
+      SidebarComponent,
+      TopbarComponent,
+      CommonModule,
+      RouterModule,],
+  templateUrl: './loands.component.html',
+  styleUrl: './loands.component.scss'
+})
+export class LoandsComponent {
 
   menuOutsideClickListener: any;
 

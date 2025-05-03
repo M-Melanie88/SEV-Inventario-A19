@@ -59,6 +59,10 @@ export class ApplayoutComponent {
       });
   }
 
+  enviarUrl(ruta: string) {
+    this.router.navigate([ruta]);
+  }
+
   isOutsideClicked(event: MouseEvent) {
     const sidebarEl = document.querySelector('.layout-sidebar');
     const topbarEl = document.querySelector('.layout-menu-button');
